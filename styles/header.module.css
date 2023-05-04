@@ -1,0 +1,119 @@
+
+
+
+
+.main-con{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-con{
+    display: flex;
+}
+.list-con li{
+    display: list-item;
+    position: relative;
+    width: fit-content; 
+}
+.list-con li a{
+    color: #444444;
+    font-weight: 500;
+    font-size: 13px;
+}
+.list-con li a:hover{
+    color: #4bbb87;
+}
+.desktop-dropdown-item{
+    position: absolute;
+    background-color: #ffff;
+    width: 250px;
+    top: 50px;
+    border-top: 3px solid #4bbb87;
+    z-index: 3;
+    display: none;
+}
+.desktop-dropdown-item li{
+    width: fit-content;  
+}
+.desktop-dropdown-item ul li a{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #444444;
+}
+.desktop-dropdown-item ul li a:hover{
+    color: #4bbb87;
+}
+.list-con .list-hover:hover .desktop-dropdown-item{
+    display: block;
+}
+
+
+.member-button{
+    padding: 10px;
+    color: #444444;
+    border: 1px solid;
+    border-bottom: 3px solid #4bbb87;
+    height: 35px;
+    margin-top: 28px;
+    font-size: 12px;
+    font-weight: normal;  
+}
+
+
+
+
+
+
+.member-button:hover{
+    background-color: #444444;
+    color: #fff !important;
+}
+
+.mobile-con .mobile-list-item{
+    display: list-item;
+    border-top: 1px solid #a7a2a2;  
+    padding: 0px;
+}
+.mobile-con  .mobile-list-item .mobile-dropdown-item{
+    display: list-item;
+    border-top: 1px solid #a7a2a2;
+    font-size: 13px;
+}
+.mobile-con a:hover{
+    color: #4bbb87!important;
+}
+.mobile-list-nodropdown{
+    padding: 5px;
+    display: list-item;
+    border-top: 1px solid #a7a2a2;  
+}
+.mobile-list-nodropdown a{
+    font-size: 12px;
+    font-weight: 700;
+    color: #444444 ;
+}
+.mobile-dropdown-head a{
+    font-size: 12px;
+    font-weight: 700;
+    color: #444444;
+}
+
+@media (min-width: 0px) {
+    .header-logo{
+        width:150px;
+        height: 50%;
+        object-fit: contain;
+    }
+ }
+ @media (min-width: 1200px){
+    .header-logo{
+        width:200px;
+        height:100%;
+        object-fit: contain;
+      }  
+ }
+.main-con a{
+    color: #444444;
+}
