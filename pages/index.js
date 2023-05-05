@@ -2,7 +2,6 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import { Button, Box, Typography } from "@mui/material";
 export default function Home() {
   const session = useSession();
-  console.log(session);
   if (session.data === null) {
     return (
       <>
