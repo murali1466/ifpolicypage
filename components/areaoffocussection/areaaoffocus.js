@@ -23,6 +23,18 @@ function TabPanel(props) {
   );
 }
 
+const labeldata = [
+  "The Kalifa Review",
+  "SME Finance",
+  "FinTech Regulation",
+  "Trade policy",
+  "Net Zero",
+  "Innovation in unsecured credit",
+  "Open Finance",
+  "Digital Assets, Blockchain and Crypto",
+  "Innovate Finance FinTech Agenda for the New PM",
+];
+
 export default function ResponsiveTabs() {
   const [value, setValue] = useState(0);
   const handleChange = (event, newValue) => {
@@ -45,17 +57,9 @@ export default function ResponsiveTabs() {
         >
           <Paper sx={{ width: { xs: "100%", md: "30%" } }} elevation={0}>
             <Tabs value={value} onChange={handleChange}>
-              <Tab label="The Kalifa Review" />
-
-              <Tab label="SME Finance" />
-
-              <Tab label="FinTech Regulation" />
-              <Tab label="Trade policy" />
-              <Tab label="Net Zero" />
-              <Tab label="Innovation in unsecured credit" />
-              <Tab label="Open Finance" />
-              <Tab label="Digital Assets, Blockchain and Crypto" />
-              <Tab label="Innovate Finance FinTech Agenda for the New PM" />
+              {labeldata.map((data) => (
+                <Tab label={data} />
+              ))}
             </Tabs>
           </Paper>
           <Box
